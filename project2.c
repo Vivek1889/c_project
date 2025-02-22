@@ -64,6 +64,5 @@ int main(){
     printf("d:  AWS\n");
     scanf(" %c",&ans[q]);
      printf("final score is =%f out of %d",check(ans),q+1);
-printf("Hello world");
 return 0;
 }
