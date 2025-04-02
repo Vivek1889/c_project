@@ -3,7 +3,7 @@
 #include<stdio.h>
 #include<string.h>
 float check(char ans[]){
-    char a[]={'b','c','a','b','d','d'};
+    char a[]={'b','c','a','b','d','d','c'};
     float score=0;
     for(int i=0;i<strlen(a)-1;i++){
         if(ans[i]==a[i]){
@@ -55,7 +55,7 @@ int main(){
     printf("c:  AWS\n");
     printf("d:  Linux\n");
     scanf(" %c",&ans[q]);
-    ++q;
+    ++q; 
 
     printf("Q%d: Which is an cloud computing service\n",q+1);
     printf("a:  Ubuntu\n");
@@ -64,5 +64,14 @@ int main(){
     printf("d:  AWS\n");
     scanf(" %c",&ans[q]);
      printf("final score is =%f out of %d",check(ans),q+1);
+     ++q;
+
+     printf("Q%d: Who is father of computer ?\n",q+1);
+    printf("a:  Satya nadela\n");
+    printf("b:  Gorge bush\n");
+    printf("c:  Charles babbage\n");
+    printf("d:  Bill gates\n");
+    scanf(" %c",&ans[q]);
+   
 return 0;
 }
